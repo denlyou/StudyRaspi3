@@ -58,5 +58,16 @@ $ ifup wlan0
 
 ### nodejs
 - 라즈베리파이2이상은 ARMv7 그 이하는 ARMv6버전으로 설치
+
 > 컴파일 버전은 하루종일 해도 끝날 기미가 안보임..
 > http://blog.xcoda.net/86
+
+- GPIO 제어
+  - onoff 모듈 => https://github.com/fivdi/onoff
+
+
+### postfix 메일서버와 gmail연동
+- 메일발송 서버 만들기 : http://blog.saltfactory.net/ubuntu/relay-mail-to-gmail-via-postfix-on-ubuntu.html
+
+### gitlab-ce설치
+- RASPBIAN 전용 설치 방법이 친절하게도 따로 있음 => https://about.gitlab.com/downloads/#raspberrypi2

@@ -52,6 +52,23 @@ $ ifdown wlan0
 $ ifup wlan0
 ```
 
+- 숨겨진 SSID에 접속하기
+```shell
+auto wlan0
+allow-hotplug wlan0
+iface wlan0 inet dhcp
+    wpa-scan-ssid 1
+    wpa-ap-scan 1
+    wpa-key-mgmt WPA-PSK
+    wpa-proto RSN WPA
+    wpa-pairwise CCMP TKIP
+    wpa-group CCMP TKIP
+    wpa-ssid "SSID"
+    wpa-psk "PASSWORD"
+
+iface default inet dhcp
+```
+
 ### 원격 설정
 - ssh는 `raspi-config`
 - 원격데스크탑을 `apt-get instll xrdp`로 설치후 접속
